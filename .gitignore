@@ -28,3 +28,7 @@ replay_pid*
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Large generated benchmark datasets
+**/benchmark_dataset/
+benchmark_dataset/
