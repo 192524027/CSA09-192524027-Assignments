@@ -1,7 +1,7 @@
 # PROGRAMMING IN JAVA (ASSIGNMENT 3 – CO3)
 ## Exception Handling & Multithreading
 
-**Repository URL:** [https://github.com/192524027/CSA09-192524027-Assignment3](https://github.com/192524027/CSA09-192524027-Assignment3)  
+**Repository URL:** [https://github.com/192524027/CSA09-192524027-Assignments](https://github.com/192524027/CSA09-192524027-Assignments)  
 **Student A (Primary):** Bhuvanesh H (Register Number: `192524027`)  
 **Student B (Pair Partner):** Peer Collaborator (`192524027` Pair-Work Distribution)  
 **Java Version:** `OpenJDK 21.0.13 LTS` (Temurin-21.0.13+9)  
@@ -31,7 +31,7 @@ c:/Users/bhuvi/Downloads/Java-Assignment/
 ├── REPORT.md                                    <- Comprehensive academic report with complete K4/K5 evaluations
 ├── ASSIGNMENT3.pdf                              <- Official assignment specification
 ├── render_screenshot.py                         <- Monospace terminal output screenshot renderer
-└── Assignment-3/
+└── Assignment3/
     ├── Task01/                                  <- Q1: ATM Withdrawal Simulation
     │   ├── ATMWithdrawalSimulation.java
     │   ├── BroaderCatchCompilationDemo.java
@@ -80,11 +80,11 @@ c:/Users/bhuvi/Downloads/Java-Assignment/
 
 ## 🚀 Compilation and Execution Instructions
 
-All commands can be executed from the root directory or inside `Assignment-3/`.
+All commands can be executed from the root directory or inside `Assignment3/`.
 
 ### Task 01: Bank ATM Simulation (Q1)
 ```bash
-cd Assignment-3
+cd Assignment3
 javac Task01/*.java
 java Task01.ATMWithdrawalSimulation
 java Task01.UncaughtDemo
@@ -95,7 +95,7 @@ java Task01.UncaughtDemo
 
 ### Task 02: Online Examination Portal (Q2)
 ```bash
-cd Assignment-3
+cd Assignment3
 javac Task02/*.java
 java Task02.StorageDemo
 java Task02.OnlineExamPortal
@@ -106,7 +106,7 @@ java Task02.OnlineExamPortal
 
 ### Task 03: Daily Sales Report Generator (Q3)
 ```bash
-cd Assignment-3
+cd Assignment3
 javac Task03/*.java
 java Task03.DailySalesComparisonDemo
 ```
@@ -116,7 +116,7 @@ java Task03.DailySalesComparisonDemo
 
 ### Task 04: Parallel Answer-Script Scanning (Q4)
 ```bash
-cd Assignment-3
+cd Assignment3
 javac Task04/*.java
 java Task04.ScannerExperimentsDemo
 ```
@@ -126,7 +126,7 @@ java Task04.ScannerExperimentsDemo
 
 ### Task 05: Cinema Seat Booking Race Conditions (Q5)
 ```bash
-cd Assignment-3
+cd Assignment3
 javac Task05/*.java
 java Task05.SeatBooking
 java Task05.SeatBookingRaceExperiment
@@ -137,7 +137,7 @@ java Task05.SeatBookingRaceExperiment
 
 ### Task 06: Deadlock & Hostel Mess Token Counter (Q6)
 ```bash
-cd Assignment-3
+cd Assignment3
 javac Task06/*.java
 java Task06.TokenCounter
 java Task06.HostelWalletTransfer
@@ -148,7 +148,7 @@ java Task06.HostelWalletTransfer
 
 ### Task 07: Concurrent Fault-Tolerant Processor (Q7)
 ```bash
-cd Assignment-3
+cd Assignment3
 javac Task07/*.java
 java Task07.SemesterResultProcessor
 ```

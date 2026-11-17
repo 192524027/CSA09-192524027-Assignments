@@ -7,7 +7,7 @@
 ### Cover Page & Metadata
 - **Student A (Primary Author):** Bhuvanesh H (Register Number: `192524027`)
 - **Student B (Pair-Work Collaborator):** Peer Collaborator (`192524027` Pair-Work Framework)
-- **GitHub Public Repository:** [https://github.com/192524027/CSA09-192524027-Assignment3](https://github.com/192524027/CSA09-192524027-Assignment3)
+- **GitHub Public Repository:** [https://github.com/192524027/CSA09-192524027-Assignments](https://github.com/192524027/CSA09-192524027-Assignments)
 - **Java Platform:** OpenJDK 21.0.13 LTS (Temurin 64-bit Server VM)
 - **Target OS:** Windows 10/11 x64
 - **Bloom's Taxonomy Levels Assessed:** K4 (Analyse) & K5 (Evaluate)
@@ -84,7 +84,7 @@ In an ATM context, the `finally` block guarantees that the hardware card latch i
 
 ### Student B – Testing and Tracing
 #### Five Test Input Paths
-The test suite in `Assignment-3/Task01/ATMWithdrawalSimulation.java` executes 5 distinct paths:
+The test suite in `Assignment3/Task01/ATMWithdrawalSimulation.java` executes 5 distinct paths:
 1. **Valid Transaction:** Acc: `123456`, Amount: `$200.00` $\rightarrow$ Successfully dispensed cash; balance updated to `$800.00`; `finally` executed.
 2. **Non-Numeric Input:** Acc: `ACC_XYZ`, Amount: `$100.00` $\rightarrow$ Caught `NumberFormatException` via multi-catch; `finally` executed.
 3. **Negative Amount:** Acc: `123456`, Amount: `-$50.00` $\rightarrow$ Caught `InvalidAmountException` via multi-catch; `finally` executed.
@@ -92,7 +92,7 @@ The test suite in `Assignment-3/Task01/ATMWithdrawalSimulation.java` executes 5 
 5. **Missing Hardware File:** Missing `Task01/missing_reader.dat` $\rightarrow$ Caught `FileNotFoundException`; `finally` executed.
 
 #### Uncaught Exception Stack Trace Analysis
-Execution of `Assignment-3/Task01/UncaughtDemo.java` generated the following stack trace:
+Execution of `Assignment3/Task01/UncaughtDemo.java` generated the following stack trace:
 ```text
 Exception in thread "main" java.lang.ArithmeticException: / by zero
 	at Task01.UncaughtDemo.methodC(UncaughtDemo.java:9)
@@ -105,7 +105,7 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 - **Lines 3–5:** Illustrates stack unwinding through the active activation frames: `methodC` called by `methodB` (line 14), called by `methodA` (line 18), called by `main` (line 23).
 
 #### Broader Catch Before Narrower Catch Demonstration
-In `Assignment-3/Task01/BroaderCatchCompilationDemo.java`, placing `catch (Exception e)` before `catch (FileNotFoundException fnf)` triggers javac error:
+In `Assignment3/Task01/BroaderCatchCompilationDemo.java`, placing `catch (Exception e)` before `catch (FileNotFoundException fnf)` triggers javac error:
 ```text
 BroaderCatchCompilationDemo.java:15: error: exception FileNotFoundException has already been caught
         catch (FileNotFoundException fnf) {
@@ -250,7 +250,7 @@ Cause: Disk quota exceeded
 # Q3 – Resource Safety, Debugging and Robust Code (7 Marks, K4 - Analyse)
 
 ### Shared Group Work
-Two report generator versions were implemented and evaluated in `Assignment-3/Task03/`:
+Two report generator versions were implemented and evaluated in `Assignment3/Task03/`:
 - **`DailySalesReportManual.java`:** Uses traditional `try-catch-finally` with manual `.close()`.
 - **`DailySalesReportTWR.java`:** Uses Java 7+ Try-With-Resources (TWR).
 - **Verification:** On clean inputs (`store1.csv`, `store2.csv`, `store4.csv`), both produced identical outputs matching byte-for-byte.
@@ -292,7 +292,7 @@ TWR guarantees resource closure, but it does **not** guarantee **transactional a
 # Q4 – Thread Creation and the Thread Life Cycle (7 Marks, K4 - Analyse)
 
 ### Shared Group Work
-Two multi-threaded scanner engines were developed in `Assignment-3/Task04/`:
+Two multi-threaded scanner engines were developed in `Assignment3/Task04/`:
 - `AnswerScriptScannerThread.java` (Extending `Thread`)
 - `AnswerScriptScannerRunnable.java` (Implementing `Runnable`)
 - Coordinated via `start()`, `sleep()`, `join()`, and `isAlive()`.
@@ -369,7 +369,7 @@ Because thread execution is interleaved arbitrarily by the OS scheduler. Any sof
 # Q5 – Race Conditions in a Cinema Seat-Booking System (6 Marks, K4 - Analyse)
 
 ### Shared Group Work
-Evaluated three concurrent booking architectures in `Assignment-3/Task05/`:
+Evaluated three concurrent booking architectures in `Assignment3/Task05/`:
 1. Unsynchronized booking (Check-Then-Act race condition).
 2. Synchronized method booking (coarse-grained screen lock).
 3. Synchronized block booking (fine-grained lock per seat).
@@ -433,7 +433,7 @@ public synchronized boolean book(int seat) {
 # Q6 – Deadlock and Inter-Thread Communication (7 Marks, K4 - Analyse)
 
 ### Shared Group Work
-Implemented in `Assignment-3/Task06/`:
+Implemented in `Assignment3/Task06/`:
 - **Part A:** Hostel wallet money transfers with deadlock reproduction and deadlock prevention.
 - **Part B:** Mess meal token producer-consumer queue with monitored invariant tracking.
 
